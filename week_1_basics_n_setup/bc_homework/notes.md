@@ -50,3 +50,7 @@ pip install jupyter
 ```
 
 To start it, run `jupyter notebook` in the terminal. It will open up a browser window for you.
+
+## NY Taxi Data
+The link for the data can be found [here](https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page).
+ 
