@@ -41,3 +41,12 @@ pgcli -h localhost -p 5432 -u root -d ny_taxi
 And then enter in your password for the container (see above).
 
 Run a basic Postgres command (like `\dt` to list the tables) to see if it is working.
+
+## Jupyter
+Jupyter is an interactive environment for Python (PyCharm is another such environment).
+
+```bash
+pip install jupyter
+```
+
+To start it, run `jupyter notebook` in the terminal. It will open up a browser window for you.
