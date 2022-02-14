@@ -25,3 +25,19 @@ docker run -it -e POSTGRES_USER="root" -e POSTGRES_PASSWORD="root" -e POSTGRES_D
 ```
 NOTE: 
 Run `docker ps` to see what containers are currently running if you get a port issue.
+
+When your Python env is set up (see [pyenv virtualenv](https://github.com/pyenv/pyenv-virtualenv) for more info), install Postgres with
+```bash
+brew install postgresql
+```
+and then 
+```bash
+pip install pgcli
+```
+Run `pgcli --help` to see if it is working. Then, assuming you already have the container running, run
+```bash
+pgcli -h localhost -p 5432 -u root -d ny_taxi
+```
+And then enter in your password for the container (see above).
+
+Run a basic Postgres command (like `\dt` to list the tables) to see if it is working.
